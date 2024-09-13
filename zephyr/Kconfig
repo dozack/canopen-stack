@@ -5,6 +5,7 @@ config ZEPHYR_CANOPEN_STACK_MODULE
 
 config CANOPEN_STACK
 	    bool "canopen-stack support"
+        default n
 	    depends on CAN && !CAN_FD_MODE
 	    help
 	      This option enables the canopen-stack library.
