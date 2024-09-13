@@ -7,9 +7,13 @@ config CANOPEN_STACK_SUPPORTED
 	    bool
 	    depends on CAN
 	    help
-	      This option enables the canopen-stack library.
+	       Library canopen-stack is supported.
 
-if CANOPEN_STACK_SUPPORTED
+config CANOPEN_STACK
+		bool "canopen-stack library"
+		depends on CANOPEN_STACK_SUPPORTED
+
+if CANOPEN_STACK
 
 config CANOPEN_STACK_SDO_SERVER_COUNT
 	    int "SSDO count"
@@ -39,4 +43,4 @@ config CANOPEN_STACK_USE_CSDO
 	    bool "CSDO support"
 	    default y
 
-endif # CANOPEN_STACK_SUPPORTED
+endif # CANOPEN_STACK
