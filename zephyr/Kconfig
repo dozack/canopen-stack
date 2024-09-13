@@ -7,7 +7,7 @@ config CANOPEN_STACK
 	    bool "canopen-stack support"
 	    depends on CAN && !CAN_FD_MODE
 	    help
-	    This option enables the canopen-stack library.
+	      This option enables the canopen-stack library.
 
 if CANOPEN_STACK
 
