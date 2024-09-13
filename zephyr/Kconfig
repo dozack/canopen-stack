@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: Apache-2.0
+
+config ZEPHYR_CANOPEN_STACK_MODULE
+	bool
+
+config CANOPEN_STACK
+	bool "canopen-stack support"
+	depends on CAN && !CAN_FD_MODE
+	help
+	  This option enables the canopen-stack library.
