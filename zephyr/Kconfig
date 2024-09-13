@@ -8,3 +8,7 @@ config CANOPEN_STACK
 	depends on CAN && !CAN_FD_MODE
 	help
 	  This option enables the canopen-stack library.
+
+if CANOPEN_STACK
+
+endif # CANOPEN_STACK
