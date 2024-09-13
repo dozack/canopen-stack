@@ -11,4 +11,32 @@ config CANOPEN_STACK
 
 if CANOPEN_STACK
 
+config CANOPEN_STACK_SDO_SERVER_COUNT
+	    int "SSDO count"
+	    default 1
+
+config CANOPEN_STACK_SDO_CLIENT_COUNT
+	    int "CSDO count"
+	    default 1
+
+config CANOPEN_STACK_EMCY_CODE_COUNT
+	    int "EMCY count"
+	    default 32
+
+config CANOPEN_STACK_RPDO_COUNT
+	    int "RPDO count"
+	    default 4
+
+config CANOPEN_STACK_TPDO_COUNT
+	    int "TPDO count"
+	    default 4
+
+config CANOPEN_STACK_USE_LSS
+	    bool "LSS support"
+	    default y
+
+config CANOPEN_STACK_USE_CSDO
+	    bool "CSDO support"
+	    default y
+
 endif # CANOPEN_STACK
